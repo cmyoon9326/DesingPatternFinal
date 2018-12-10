@@ -1,0 +1,31 @@
+<%- include layouts/header.ejs %>
+
+        <div class="page-data">
+
+            <form method="post" action="/customers/add">
+                <table cellpadding="11">
+                <tr>
+                    <td class="label">이름</td><td>: <input type="text" name="name" required></td>
+                 </tr>
+                 <tr>
+                    <td class="label" valign="top">주소</td><td valign="top">: <textarea name="address" required cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label">E-mail</td><td>: <input type="text" name="email" required></td>
+                 </tr>
+                  <tr>
+                    <td class="label">전화번호</td><td>: <input type="text" name="phone" required></td>
+                 </tr>
+                 <tr>
+                    <td class="label"></td>
+                    <td>
+                        &nbsp; <input type="submit" name="submit" value="Save">
+                       <input type="button" name="cancel" value="Cancel" class="cancel" onClick="cancelAdd()">
+                    </td>
+                 </tr>
+                </table>
+            </form>
+
+        </div>
+
+<%- include layouts/footer.ejs %>
